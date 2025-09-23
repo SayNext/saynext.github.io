@@ -1,0 +1,83 @@
+[
+  {
+    "method": "No vision",
+    "BLEU-4": 0.633,
+    "ROUGE-L": 11.148,
+    "BertScore-F1": 0.4968,
+    "Sentence-BERT": 0.2644,
+    "Valence": 0.63313,
+    "Arousal": 0.70029
+  },
+  {
+    "method": "InternVL2",
+    "BLEU-4": 0.85,
+    "ROUGE-L": 13.576,
+    "BertScore-F1": 0.5402,
+    "Sentence-BERT": 0.4447,
+    "Valence": 0.78024,
+    "Arousal": 0.79932
+  },
+  {
+    "method": "VideoLLaMA3",
+    "BLEU-4": 0.534,
+    "ROUGE-L": 13.033,
+    "BertScore-F1": 0.5339,
+    "Sentence-BERT": 0.3857,
+    "Valence": 0.72401,
+    "Arousal": 0.75002
+  },
+  {
+    "method": "LLaVA-NeXT",
+    "BLEU-4": 0.565,
+    "ROUGE-L": 12.332,
+    "BertScore-F1": 0.4686,
+    "Sentence-BERT": 0.3852,
+    "Valence": 0.64883,
+    "Arousal": 0.71677
+  },
+  {
+    "method": "InstructBlip",
+    "BLEU-4": 0.371,
+    "ROUGE-L": 8.643,
+    "BertScore-F1": 0.4596,
+    "Sentence-BERT": 0.2759,
+    "Valence": 0.51285,
+    "Arousal": 0.60562
+  },
+  {
+    "method": "Emotion-LLaMA",
+    "BLEU-4": 0.389,
+    "ROUGE-L": 13.144,
+    "BertScore-F1": 0.5086,
+    "Sentence-BERT": 0.324,
+    "Valence": 0.77705,
+    "Arousal": 0.80732
+  },
+  {
+    "method": "GPT4o",
+    "BLEU-4": 0.71,
+    "ROUGE-L": 13.47,
+    "BertScore-F1": 0.5334,
+    "Sentence-BERT": 0.3872,
+    "Valence": 0.7477,
+    "Arousal": 0.78584
+  },
+  {
+    "method": "Gemini2.5",
+    "BLEU-4": 0.51,
+    "ROUGE-L": 11.446,
+    "BertScore-F1": 0.5244,
+    "Sentence-BERT": 0.2731,
+    "Valence": 0.56094,
+    "Arousal": 0.64392
+  },
+  {
+    "method": "SayNext-Chat (Ours)",
+    "BLEU-4": 1.939,
+    "ROUGE-L": 16.681,
+    "BertScore-F1": 0.5563,
+    "Sentence-BERT": 0.4365,
+    "Valence": 0.7658,
+    "Arousal": 0.79932
+  }
+]
