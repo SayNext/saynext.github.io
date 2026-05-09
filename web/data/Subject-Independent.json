@@ -6,16 +6,20 @@
     "BertScore-F1": 0.4968,
     "Sentence-BERT": 0.2644,
     "Valence": 0.63313,
-    "Arousal": 0.70029
+    "Arousal": 0.70029,
+    "DEC": 0.9305,
+    "IC": 0.8164
   },
   {
     "method": "InternVL2",
-    "BLEU-4": 0.85,
+    "BLEU-4": 0.850,
     "ROUGE-L": 13.576,
     "BertScore-F1": 0.5402,
     "Sentence-BERT": 0.4447,
     "Valence": 0.78024,
-    "Arousal": 0.79932
+    "Arousal": 0.79932,
+    "DEC": 0.9234,
+    "IC": 0.8503
   },
   {
     "method": "VideoLLaMA3",
@@ -24,7 +28,9 @@
     "BertScore-F1": 0.5339,
     "Sentence-BERT": 0.3857,
     "Valence": 0.72401,
-    "Arousal": 0.75002
+    "Arousal": 0.75002,
+    "DEC": 0.8582,
+    "IC": 0.7487
   },
   {
     "method": "LLaVA-NeXT",
@@ -33,7 +39,9 @@
     "BertScore-F1": 0.4686,
     "Sentence-BERT": 0.3852,
     "Valence": 0.64883,
-    "Arousal": 0.71677
+    "Arousal": 0.71677,
+    "DEC": 0.8577,
+    "IC": 0.7971
   },
   {
     "method": "InstructBlip",
@@ -42,34 +50,42 @@
     "BertScore-F1": 0.4596,
     "Sentence-BERT": 0.2759,
     "Valence": 0.51285,
-    "Arousal": 0.60562
+    "Arousal": 0.60562,
+    "DEC": 0.6465,
+    "IC": 0.6062
   },
   {
     "method": "Emotion-LLaMA",
     "BLEU-4": 0.389,
     "ROUGE-L": 13.144,
     "BertScore-F1": 0.5086,
-    "Sentence-BERT": 0.324,
+    "Sentence-BERT": 0.3240,
     "Valence": 0.77705,
-    "Arousal": 0.80732
+    "Arousal": 0.80732,
+    "DEC": 0.5526,
+    "IC": 0.5437
   },
   {
-    "method": "GPT4o",
-    "BLEU-4": 0.71,
-    "ROUGE-L": 13.47,
+    "method": "GPT-4o",
+    "BLEU-4": 0.710,
+    "ROUGE-L": 13.470,
     "BertScore-F1": 0.5334,
     "Sentence-BERT": 0.3872,
-    "Valence": 0.7477,
-    "Arousal": 0.78584
+    "Valence": 0.74770,
+    "Arousal": 0.78584,
+    "DEC": 0.9499,
+    "IC": 0.8605
   },
   {
-    "method": "Gemini2.5",
-    "BLEU-4": 0.51,
+    "method": "Gemini-2.5",
+    "BLEU-4": 0.510,
     "ROUGE-L": 11.446,
     "BertScore-F1": 0.5244,
     "Sentence-BERT": 0.2731,
     "Valence": 0.56094,
-    "Arousal": 0.64392
+    "Arousal": 0.64392,
+    "DEC": 0.9250,
+    "IC": 0.7357
   },
   {
     "method": "SayNext-Chat (Ours)",
@@ -77,7 +93,9 @@
     "ROUGE-L": 16.681,
     "BertScore-F1": 0.5563,
     "Sentence-BERT": 0.4365,
-    "Valence": 0.7658,
-    "Arousal": 0.79932
+    "Valence": 0.76580,
+    "Arousal": 0.79932,
+    "DEC": 0.9198,
+    "IC": 0.8734
   }
 ]

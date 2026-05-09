@@ -5,8 +5,10 @@
     "ROUGE-L": 9.602,
     "BertScore-F1": 0.5016,
     "Sentence-BERT": 0.1804,
-    "Valence": 0.5143,
-    "Arousal": 0.57
+    "Valence": 0.51430,
+    "Arousal": 0.57000,
+    "DEC": 0.6369,
+    "IC": 0.4325
   },
   {
     "method": "VideoLLaMA3",
@@ -15,7 +17,9 @@
     "BertScore-F1": 0.4915,
     "Sentence-BERT": 0.1674,
     "Valence": 0.44701,
-    "Arousal": 0.51264
+    "Arousal": 0.51264,
+    "DEC": 0.4987,
+    "IC": 0.3181
   },
   {
     "method": "LLaVA-NeXT",
@@ -24,7 +28,9 @@
     "BertScore-F1": 0.4779,
     "Sentence-BERT": 0.1724,
     "Valence": 0.39481,
-    "Arousal": 0.46541
+    "Arousal": 0.46541,
+    "DEC": 0.5917,
+    "IC": 0.3038
   },
   {
     "method": "Emotion-LLaMA",
@@ -33,25 +39,31 @@
     "BertScore-F1": 0.4478,
     "Sentence-BERT": 0.1724,
     "Valence": 0.52532,
-    "Arousal": 0.61817
+    "Arousal": 0.61817,
+    "DEC": 0.3054,
+    "IC": 0.2822
   },
   {
-    "method": "GPT4o",
+    "method": "GPT-4o",
     "BLEU-4": 0.474,
     "ROUGE-L": 9.504,
     "BertScore-F1": 0.4707,
     "Sentence-BERT": 0.1787,
     "Valence": 0.43655,
-    "Arousal": 0.49732
+    "Arousal": 0.49732,
+    "DEC": 0.5186,
+    "IC": 0.3979
   },
   {
-    "method": "Gemini2.5",
+    "method": "Gemini-2.5",
     "BLEU-4": 0.914,
     "ROUGE-L": 9.126,
     "BertScore-F1": 0.4957,
     "Sentence-BERT": 0.1528,
     "Valence": 0.43701,
-    "Arousal": 0.50057
+    "Arousal": 0.50057,
+    "DEC": 0.5298,
+    "IC": 0.3593
   },
   {
     "method": "SayNext-Chat (Ours)",
@@ -60,6 +72,8 @@
     "BertScore-F1": 0.57625,
     "Sentence-BERT": 0.3076,
     "Valence": 0.54767,
-    "Arousal": 0.59014
+    "Arousal": 0.59014,
+    "DEC": 0.6902,
+    "IC": 0.5431
   }
 ]

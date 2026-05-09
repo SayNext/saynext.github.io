@@ -1,74 +1,57 @@
 [
   {
     "method": "InternVL2",
-    "BLEU-4": 0.00772,
-    "ROUGE-L": 0.13936,
-    "BertScore-F1": 0.5468,
-    "Sentence-BERT": 0.00952,
-    "Valence": 0.79863,
-    "Arousal": 0.81969
-  },
-  {
-    "method": "GPT4o",
-    "BLEU-4": 0.01081,
-    "ROUGE-L": 0.14623,
-    "BertScore-F1": 0.5489,
-    "Sentence-BERT": 0.01353,
-    "Valence": 0.79441,
-    "Arousal": 0.80838
-  },
-  {
-    "method": "Gemini2.5",
-    "BLEU-4": 0.0071,
-    "ROUGE-L": 0.11951,
-    "BertScore-F1": 0.53,
-    "Sentence-BERT": 0.03669,
-    "Valence": 0.65538,
-    "Arousal": 0.70022
+    "BLEU-4": 0.358,
+    "ROUGE-L": 13.042,
+    "BertScore-F1": 0.5387,
+    "Sentence-BERT": 0.4679,
+    "Valence": 0.79117,
+    "Arousal": 0.81085,
+    "DEC": 0.9215,
+    "IC": 0.8499
   },
   {
     "method": "VideoLLaMA3",
-    "BLEU-4": 0.00554,
-    "ROUGE-L": 0.13696,
-    "BertScore-F1": 0.5397,
-    "Sentence-BERT": 0.01795,
-    "Valence": 0.71166,
-    "Arousal": 0.7582
+    "BLEU-4": 0.183,
+    "ROUGE-L": 11.913,
+    "BertScore-F1": 0.5181,
+    "Sentence-BERT": 0.4149,
+    "Valence": 0.73393,
+    "Arousal": 0.76607,
+    "DEC": 0.8514,
+    "IC": 0.7830
   },
   {
     "method": "LLaVA-NeXT",
-    "BLEU-4": 0.00472,
-    "ROUGE-L": 0.12143,
-    "BertScore-F1": 0.4469,
-    "Sentence-BERT": 0.04408,
-    "Valence": 0.63044,
-    "Arousal": 0.69315
-  },
-  {
-    "method": "InstructBlip",
-    "BLEU-4": 0.00466,
-    "ROUGE-L": 0.08679,
-    "BertScore-F1": 0.4596,
-    "Sentence-BERT": 0.02122,
-    "Valence": 0.50761,
-    "Arousal": 0.60748
+    "BLEU-4": 0.455,
+    "ROUGE-L": 13.792,
+    "BertScore-F1": 0.5290,
+    "Sentence-BERT": 0.4593,
+    "Valence": 0.78622,
+    "Arousal": 0.80323,
+    "DEC": 0.9160,
+    "IC": 0.8513
   },
   {
     "method": "Emotion-LLaMA",
-    "BLEU-4": 0.0038,
-    "ROUGE-L": 0.14046,
-    "BertScore-F1": 0.5139,
-    "Sentence-BERT": 0.00579,
-    "Valence": 0.78967,
-    "Arousal": 0.82126
+    "BLEU-4": 0.254,
+    "ROUGE-L": 12.664,
+    "BertScore-F1": 0.5023,
+    "Sentence-BERT": 0.3558,
+    "Valence": 0.78894,
+    "Arousal": 0.81350,
+    "DEC": 0.6264,
+    "IC": 0.5983
   },
   {
     "method": "SayNext-Chat (Ours)",
-    "BLEU-4": 0.02307,
-    "ROUGE-L": 0.17957,
-    "BertScore-F1": 0.5651,
-    "Sentence-BERT": 0.63704,
-    "Valence": 0.8014,
-    "Arousal": 0.82847
+    "BLEU-4": 2.493,
+    "ROUGE-L": 15.709,
+    "BertScore-F1": 0.5482,
+    "Sentence-BERT": 0.4712,
+    "Valence": 0.78623,
+    "Arousal": 0.81864,
+    "DEC": 0.9426,
+    "IC": 0.8970
   }
 ]

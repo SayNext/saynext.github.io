@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 headerHozAlign: "center",
             },
             {
-                title: "Emotion Consistency",
+                title: "Emotion-Intention Consistency",
                 columns: [
                     {
                         title: "Valence", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
@@ -160,6 +160,28 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         title: "Arousal", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
+                    },
+                    {
+                        title: "DEC", field: "DEC", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        formatterParams: { decimals: 4, endColor: { r: 252, g: 242, b: 204 } }
+                    },
+                    {
+                        title: "IC", field: "IC", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        formatterParams: { decimals: 4, endColor: { r: 252, g: 242, b: 204 } }
+                    },
+                ],
+                headerHozAlign: "center",
+            },
+            {
+                title: "Overall Alignment",
+                columns: [
+                    {
+                        title: "LLM-Judge (GPT)", field: "LLM-Judge-GPT", hozAlign: "center", formatter: colorFormatter, minWidth: 110, headerHozAlign: "center",
+                        formatterParams: { decimals: 2, endColor: { r: 204, g: 235, b: 215 } }
+                    },
+                    {
+                        title: "LLM-Judge (Gem)", field: "LLM-Judge-Gem", hozAlign: "center", formatter: colorFormatter, minWidth: 110, headerHozAlign: "center",
+                        formatterParams: { decimals: 2, endColor: { r: 204, g: 235, b: 215 } }
                     },
                 ],
                 headerHozAlign: "center",
@@ -203,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 headerHozAlign: "center",
             },
             {
-                title: "Emotion Consistency",
+                title: "Emotion-Intention Consistency",
                 columns: [
                     {
                         title: "Valence", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
@@ -212,6 +234,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         title: "Arousal", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
+                    },
+                    {
+                        title: "DEC", field: "DEC", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        formatterParams: { decimals: 4, endColor: { r: 252, g: 242, b: 204 } }
+                    },
+                    {
+                        title: "IC", field: "IC", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        formatterParams: { decimals: 4, endColor: { r: 252, g: 242, b: 204 } }
                     },
                 ],
                 headerHozAlign: "center",
@@ -255,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 headerHozAlign: "center",
             },
             {
-                title: "Emotion Consistency",
+                title: "Emotion-Intention Consistency",
                 columns: [
                     {
                         title: "Valence", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
@@ -264,6 +294,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         title: "Arousal", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
+                    },
+                    {
+                        title: "DEC", field: "DEC", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        formatterParams: { decimals: 4, endColor: { r: 252, g: 242, b: 204 } }
+                    },
+                    {
+                        title: "IC", field: "IC", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        formatterParams: { decimals: 4, endColor: { r: 252, g: 242, b: 204 } }
                     },
                 ],
                 headerHozAlign: "center",
@@ -307,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 headerHozAlign: "center",
             },
             {
-                title: "Emotion Consistency",
+                title: "Emotion-Intention Consistency",
                 columns: [
                     {
                         title: "Valence", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
@@ -316,6 +354,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         title: "Arousal", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
+                    },
+                    {
+                        title: "DEC", field: "DEC", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        formatterParams: { decimals: 4, endColor: { r: 252, g: 242, b: 204 } }
+                    },
+                    {
+                        title: "IC", field: "IC", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        formatterParams: { decimals: 4, endColor: { r: 252, g: 242, b: 204 } }
                     },
                 ],
                 headerHozAlign: "center",

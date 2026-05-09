@@ -105,10 +105,10 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title is-bold">
               <!-- <img src="website/img/mint-leaf-logo.png" alt="logo" width="40" height="40" /> -->
-              SayNext-Bench: Why Do LLMs Struggle with Next-Utterance Prediction?
+              SayNext-Bench: Why Do LLMs Struggle with Next-Utterance Anticipation?
             </h1>
             <!-- <br/> -->
-            <p style="color: darkred; font-weight: bold; font-size: larger;">The First Benchmark for Predicting Human Next Utterance with MLLMs</p>
+            <p style="color: darkred; font-weight: bold; font-size: larger;">The First Benchmark for Anticipating Human Next Utterance with MLLMs</p>
 
             <!-- <div class="is-size-5 publication-authors">
                         <span class="author-block">
@@ -155,7 +155,7 @@
 
                 <!-- Dataset Link. -->
                 <span class="link-block">
-                  <a href="https://huggingface.co/datasets/SayNext/SayNext-PC2K" class="btn btn-outline-dark"
+                  <a href="https://huggingface.co/datasets/SayNext/SayNext" class="btn btn-outline-dark"
                     role="button" style="display: inline-flex; align-items: center">
                     <span class="icon" style="display: inline-flex; align-items: center">
                       <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face"
@@ -177,9 +177,9 @@
                   alt="SayNext-Bench performance overview." />
                 <figcaption style="text-align: left; display: block; width: 90%; margin: auto;">
                   <b>Figure 1:</b>
-                  <b>The Illustration of Next-Utterance Prediction in SayNext-Bench.</b> Given a question utterance text
-                  and the corresponding human reaction video, the task requires MLLMs to
-                  predict the human’s subsequent response. Predicted responses from SayNext-Chat (<span
+                  <b>Illustration of Next-Utterance Anticipation in SayNext-Bench.</b> Given a question utterance text
+                  and the corresponding human reaction video, the task requires MLLMs to anticipate
+                  the human’s subsequent response. Anticipated responses from SayNext-Chat (<span
                     style="color: #009900">green</span>) are compared with ground-truth utterances (<span
                     style="color: #0066cc">blue</span>) and
                   other MLLMs (<span style="color: #cc0000">red</span>); key factors are extracted for interpretability.
@@ -200,30 +200,28 @@
         <div class="column is-four-fifths">
           <h2 class="title is-2">Abstract</h2>
           <div class="content has-text-justified content-larger-text">
-            <p><b>Problem: </b>We explore the use of large language models (LLMs) for next-utterance prediction in human
-              dialogue. Despite recent advances in LLMs demonstrating their ability to engage in natural conversations
-              with users, we show that even leading models surprisingly struggle to predict a human speaker’s next
-              utterance. Instead, humans can readily anticipate forthcoming utterances based on multi-modal cues—such as
-              gestures, gaze, and emotional tone—from the context.
+            <p><b>Problem: </b>We explore the use of large language models (LLMs) for next-utterance anticipation in
+              human dialogue. Despite recent advances in LLMs demonstrating their ability to engage in natural
+              conversations with users, we show that even leading models surprisingly struggle to anticipate a human
+              speaker’s next utterance. Instead, humans can readily anticipate forthcoming utterances based on
+              multi-modal cues—such as gestures, gaze, and emotional tone—from the context.
             </p>
             <p><b>Method: </b>
-              To systematically examine whether LLMs can reproduce this ability, we propose <b>SayNext-Bench</b>, a
-              benchmark that evaluates LLMs and Multimodal LLMs (MLLMs) on anticipating context-conditioned responses
-              from multimodal cues spanning a variety of real-world scenarios.
-              To support this benchmark, we build <b>SayNext-PC</b>, a novel large-scale dataset containing dialogues
-              with rich multimodal cues.
-              Building on this, we further develop a dual-route prediction MLLM, <b>SayNext-Chat</b>, that
-              incorporates cognitively inspired design to emulate the predictive processing in conversation.
-              Experimental results demonstrate that our model outperforms state-of-the-art MLLMs in terms of lexical
-              overlap, semantic similarity, and emotion consistency.
+              To systematically examine this gap, we propose <b>SayNext-Bench</b>, a benchmark evaluating MLLMs on
+              anticipating context-conditioned responses across diverse real-world scenarios.
+              To support it, we build <b>SayNext-PC</b>, a large-scale multimodal dialogue dataset, and carefully
+              design a <b>multi-level evaluation framework</b> spanning lexical similarity, emotion-intention
+              consistency, and LLM-based overall alignment.
+              Building on this, we develop <b>SayNext-Chat</b>, a cognitively inspired dual-route MLLM that
+              incorporates learnable priming tokens to fuse perceptual cues with anticipatory priors.
+              Extensive experiments demonstrate that SayNext-Chat consistently outperforms state-of-the-art MLLMs
+              across all evaluation levels, corroborated by user studies and LLM-as-Judge evaluations.
             </p>
             <p><b>Contribution: </b>
-              Our results prove the feasibility of next-utterance
-              prediction with LLMs from multimodal cues and emphasize the (i) indispensable role of multimodal cues and
-              (ii) actively predictive processing as the foundation of natural human interaction but missing in the
-              current MLLMs. We hope that this exploration offers a new research entry toward a more human-like,
-              context-sensitive AI
-              interaction for human-centered AI.
+              Our results emphasize the (i) indispensable role of multimodal cues and (ii) active anticipatory
+              processing as foundations of natural human interaction currently missing in MLLMs. We hope that this
+              exploration offers a new research entry toward a more human-like, context-sensitive AI interaction
+              for human-centered AI.
             </p>
           </div>
         </div>
@@ -254,7 +252,7 @@
 
         <!-- Dataset Viewer -->
         <h2 class="title is-2" style="text-align: center;">Dataset Viewer</h2>
-        <iframe src="https://huggingface.co/datasets/SayNext/SayNext-PC2K/embed/viewer/default/train" frameborder="0"
+        <iframe src="https://huggingface.co/datasets/SayNext/SayNext/embed/viewer/default/train" frameborder="0"
           width="100%" height="560px"></iframe>
         <br />
         <br />
@@ -344,29 +342,24 @@
         <div class="content has-text-justified">
           <ul class="content-larger-text">
             <li><b>Clear improvements with vision modality:</b> Incorporating visual cues consistently improves
-              next-utterance
-              prediction performance.</li>
+              next-utterance anticipation performance.</li>
 
-            <li><b>SayNext-Chat outperforms baseline MLLMs:</b> Across all three evaluation dimensions, SayNext-Chat
-              consistently
+            <li><b>SayNext-Chat outperforms baseline MLLMs:</b> Across all three evaluation levels (lexical
+              similarity, emotion-intention consistency, and overall alignment), SayNext-Chat consistently
               surpasses zero-shot baselines, including frontier large-scale MLLMs, open-source models of comparable
-              scale,
-              and emotion-specific MLLMs.</li>
+              scale, and emotion-specific MLLMs.</li>
 
             <li><b>Priming vectors significantly boost emotional alignment:</b> While fine-tuning on domain-specific
-              corpora
-              increases both lexical overlap and semantic similarity, priming tokens further improve emotion accuracy of
-              future utterances by 3%.</li>
+              corpora increases both lexical overlap and semantic similarity, priming tokens further improve
+              emotion-intention consistency of future utterances.</li>
 
             <li><b>Cross-scenario generalization and scalability:</b> SayNext-Chat maintains superior performance over
-              compared
-              baselines when evaluated on larger-scale datasets and across different scenarios in the zero-shot setting.
-            </li>
+              compared baselines when evaluated on larger-scale datasets and across different scenarios in the
+              zero-shot setting.</li>
 
             <li><b>Efficacy in human & LLM evaluations:</b> SayNext-Chat achieves higher scores in subjective human
-              assessments,
-              slightly surpassing GPT-4o and showing a clear margin over open-source MLLMs with comparable parameter
-              scales.</li>
+              assessments, slightly surpassing GPT-4o and showing a clear margin over open-source MLLMs with
+              comparable parameter scales.</li>
           </ul>
           <!-- Experimental Findings -->
 
