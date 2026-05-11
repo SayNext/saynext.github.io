@@ -304,83 +304,6 @@
         <br />
         <!-- Leaderboard -->
 
-        <!-- Attention Map Visualization -->
-        <br />
-        <h2 class="title is-2" style="text-align: center;">Visualization of Attention Maps</h2>
-
-        <div style="overflow: hidden;">
-          <div id="attn-header" style="
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 6px;
-            padding: 8px 6px;
-            background: #f5f5f5;
-            border: 1px solid #ddd;
-            border-bottom: none;
-            border-radius: 6px 6px 0 0;
-          ">
-            <div style="text-align:center; font-weight:600; font-size:0.85rem; color:#333;">Input Video</div>
-            <div style="text-align:center; font-weight:600; font-size:0.85rem; color:#c0392b;">SayNext-Chat (Ours)</div>
-            <div style="text-align:center; font-weight:600; font-size:0.85rem; color:#333;">InternVL</div>
-            <div style="text-align:center; font-weight:600; font-size:0.85rem; color:#333;">VideoLLaMA3</div>
-            <div style="text-align:center; font-weight:600; font-size:0.85rem; color:#333;">Emotion-LLaMA</div>
-          </div>
-        </div>
-
-        <div id="attn-scroll-area" style="
-          border: 1px solid #ddd;
-          border-radius: 0 0 6px 6px;
-          overflow-y: auto;
-          max-height: calc(3 * (180px + 28px + 6px) + 12px);
-          padding: 6px;
-          background: #fff;
-        ">
-          <div id="attn-grid" style="display: flex; flex-direction: column; gap: 6px;"></div>
-        </div>
-        <script>
-          (function () {
-            var rowLetters = ["a","b","c","d","e","f","g","h","i","j","k","l"];
-            var attnData = rowLetters.map(function (letter, idx) {
-              return {
-                label: "Sample " + (idx + 1),
-                images: [1, 2, 3, 4, 5].map(function (col) {
-                  return "web/img/attn/" + letter + "-" + col + ".png";
-                })
-              };
-            });
-            var colClasses = ["", "ours", "", "", ""];
-            var grid = document.getElementById("attn-grid");
-            attnData.forEach(function (sample) {
-              var row = document.createElement("div");
-              row.className = "attn-row";
-              sample.images.forEach(function (src, ci) {
-                var cell = document.createElement("div");
-                cell.className = "attn-cell" + (colClasses[ci] ? " " + colClasses[ci] : "");
-                var img = document.createElement("img");
-                img.src = src;
-                img.alt = sample.label;
-                cell.appendChild(img);
-                var lbl = document.createElement("div");
-                lbl.className = "attn-label";
-                lbl.textContent = sample.label;
-                cell.appendChild(lbl);
-                row.appendChild(cell);
-              });
-              grid.appendChild(row);
-            });
-          })();
-        </script>
-
-        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-top:6px;">
-          <p style="font-size:0.82rem; color:#555; font-style:italic; margin:0;">
-            Compared to other open-sourced 7–8B MLLMs, SayNext-Chat attends more broadly to facial expressions and gesture regions.
-          </p>
-          <p style="font-size:0.78rem; color:#aaa; margin:0; white-space:nowrap; padding-left:12px;">
-            Scroll to view all 12 samples
-          </p>
-        </div>
-        <!-- / Attention Map Visualization -->
-
         <!-- Performance -->
         <br />
         <h2 class="title is-2" style="text-align: center">SayNext-Chat Performance</h2>
@@ -471,6 +394,85 @@
           </div>
           <!-- Framework -->
 
+          <!-- Attention Map Visualization -->
+          <h2 class="title is-2" style="text-align: center;">Visualization of Attention Maps</h2>
+
+          <div style="overflow: hidden;">
+            <div id="attn-header" style="
+              display: grid;
+              grid-template-columns: 72px repeat(5, 1fr);
+              gap: 5px;
+              padding: 7px 5px;
+              background: #f5f5f5;
+              border: 1px solid #ddd;
+              border-bottom: none;
+              border-radius: 6px 6px 0 0;
+            ">
+              <div style="text-align:center; font-weight:600; font-size:0.82rem; color:#888;"></div>
+              <div style="text-align:center; font-weight:600; font-size:0.82rem; color:#333;">Input Video</div>
+              <div style="text-align:center; font-weight:600; font-size:0.82rem; color:#c0392b;">SayNext-Chat (Ours)</div>
+              <div style="text-align:center; font-weight:600; font-size:0.82rem; color:#333;">InternVL</div>
+              <div style="text-align:center; font-weight:600; font-size:0.82rem; color:#333;">VideoLLaMA3</div>
+              <div style="text-align:center; font-weight:600; font-size:0.82rem; color:#333;">Emotion-LLaMA</div>
+            </div>
+          </div>
+
+          <div id="attn-scroll-area" style="
+            border: 1px solid #ddd;
+            border-radius: 0 0 6px 6px;
+            overflow-y: auto;
+            max-height: calc(3 * (115px + 5px) + 18px);
+            padding: 5px;
+            background: #fff;
+          ">
+            <div id="attn-grid" style="display: flex; flex-direction: column; gap: 5px;"></div>
+          </div>
+
+          <script>
+            (function () {
+              var rowLetters = ["a","b","c","d","e","f","g","h","i","j","k","l"];
+              var attnData = rowLetters.map(function (letter, idx) {
+                return {
+                  label: "Sample " + (idx + 1),
+                  images: [1, 2, 3, 4, 5].map(function (col) {
+                    return "web/img/attn/" + letter + "-" + col + ".png";
+                  })
+                };
+              });
+              var grid = document.getElementById("attn-grid");
+              attnData.forEach(function (sample) {
+                var row = document.createElement("div");
+                row.className = "attn-row";
+                // Label cell
+                var labelCell = document.createElement("div");
+                labelCell.className = "attn-row-label";
+                labelCell.textContent = sample.label;
+                row.appendChild(labelCell);
+                // Image cells
+                sample.images.forEach(function (src, ci) {
+                  var cell = document.createElement("div");
+                  cell.className = "attn-cell" + (ci === 1 ? " ours" : "");
+                  var img = document.createElement("img");
+                  img.src = src;
+                  img.alt = sample.label;
+                  cell.appendChild(img);
+                  row.appendChild(cell);
+                });
+                grid.appendChild(row);
+              });
+            })();
+          </script>
+
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-top:5px;">
+            <p style="font-size:0.82rem; color:#555; font-style:italic; margin:0;">
+              Compared to other open-sourced 7–8B MLLMs, SayNext-Chat attends more broadly to facial expressions and gesture regions.
+            </p>
+            <p style="font-size:0.78rem; color:#aaa; margin:0; white-space:nowrap; padding-left:12px;">
+              Scroll to view all 12 samples
+            </p>
+          </div>
+          <!-- / Attention Map Visualization -->
+
           <!-- Case Study -->
           <h2 class="title is-2" style="text-align: center">Case Study</h2>
           <br />
@@ -493,50 +495,33 @@
   <style>
     .attn-row {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 6px;
-      align-items: start;
+      grid-template-columns: 72px repeat(5, 1fr);
+      gap: 5px;
+      align-items: center;
+    }
+    .attn-row-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #666;
+      text-align: center;
+      padding: 0 2px;
     }
     .attn-cell {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      gap: 4px;
+      justify-content: center;
     }
     .attn-cell img {
       width: 100%;
-      height: 160px;
+      height: 110px;
       object-fit: cover;
       border-radius: 4px;
       border: 1px solid #e0e0e0;
       background: #e8e8e8;
-    }
-    .attn-cell .attn-label {
-      font-size: 0.72rem;
-      color: #666;
-      text-align: center;
+      display: block;
     }
     .attn-cell.ours img {
       border: 2px solid #c0392b;
-    }
-    /* Placeholder style when no src */
-    .attn-placeholder {
-      width: 100%;
-      height: 160px;
-      border-radius: 4px;
-      border: 1px solid #e0e0e0;
-      background: linear-gradient(135deg, #e8e8e8 25%, #d8d8d8 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #aaa;
-      font-size: 0.75rem;
-      text-align: center;
-    }
-    .attn-cell.ours .attn-placeholder {
-      border: 2px solid #c0392b;
-      background: linear-gradient(135deg, #fdecea 25%, #fad7d4 100%);
-      color: #c0392b;
     }
   </style>
 
