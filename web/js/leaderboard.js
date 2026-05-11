@@ -126,11 +126,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Lexical Overlap",
                 columns: [
                     {
-                        title: "BLEU-4", field: "BLEU-4", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
+                        title: "LO-B", field: "BLEU-4", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
                         formatterParams: { decimals: 3, endColor: { r: 225, g: 213, b: 232 } }
                     },
                     {
-                        title: "ROUGE-L", field: "ROUGE-L", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
+                        title: "LO-R", field: "ROUGE-L", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
                         formatterParams: { decimals: 3, endColor: { r: 225, g: 213, b: 232 } }
                     },
                 ],
@@ -140,11 +140,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Semantic Similarity",
                 columns: [
                     {
-                        title: "BertScore-F1", field: "BertScore-F1", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "SS-B", field: "BertScore-F1", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 4, endColor: { r: 222, g: 233, b: 252 } }
                     },
                     {
-                        title: "Sentence-BERT", field: "Sentence-BERT", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "SS-S", field: "Sentence-BERT", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 4, endColor: { r: 222, g: 233, b: 252 } }
                     },
                 ],
@@ -154,11 +154,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Emotion-Intention Consistency",
                 columns: [
                     {
-                        title: "Valence", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "CEC-V", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
                     },
                     {
-                        title: "Arousal", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "CEC-A", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
                     },
                     {
@@ -176,11 +176,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Overall Alignment",
                 columns: [
                     {
-                        title: "LLM-Judge (GPT)", field: "LLM-Judge-GPT", hozAlign: "center", formatter: colorFormatter, minWidth: 110, headerHozAlign: "center",
+                        title: "J<sub>GPT</sub>", field: "LLM-Judge-GPT", hozAlign: "center", formatter: colorFormatter, minWidth: 110, headerHozAlign: "center",
                         formatterParams: { decimals: 2, endColor: { r: 204, g: 235, b: 215 } }
                     },
                     {
-                        title: "LLM-Judge (Gem)", field: "LLM-Judge-Gem", hozAlign: "center", formatter: colorFormatter, minWidth: 110, headerHozAlign: "center",
+                        title: "J<sub>Gem</sub>", field: "LLM-Judge-Gem", hozAlign: "center", formatter: colorFormatter, minWidth: 110, headerHozAlign: "center",
                         formatterParams: { decimals: 2, endColor: { r: 204, g: 235, b: 215 } }
                     },
                 ],
@@ -200,11 +200,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Lexical Overlap",
                 columns: [
                     {
-                        title: "BLEU-4", field: "BLEU-4", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
+                        title: "LO-B", field: "BLEU-4", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
                         formatterParams: { decimals: 3, endColor: { r: 225, g: 213, b: 232 } }
                     },
                     {
-                        title: "ROUGE-L", field: "ROUGE-L", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
+                        title: "LO-R", field: "ROUGE-L", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
                         formatterParams: { decimals: 3, endColor: { r: 225, g: 213, b: 232 } }
                     },
                 ],
@@ -214,11 +214,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Semantic Similarity",
                 columns: [
                     {
-                        title: "BertScore-F1", field: "BertScore-F1", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "SS-B", field: "BertScore-F1", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 4, endColor: { r: 222, g: 233, b: 252 } }
                     },
                     {
-                        title: "Sentence-BERT", field: "Sentence-BERT", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "SS-S", field: "Sentence-BERT", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 4, endColor: { r: 222, g: 233, b: 252 } }
                     },
                 ],
@@ -228,11 +228,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Emotion-Intention Consistency",
                 columns: [
                     {
-                        title: "Valence", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "CEC-V", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
                     },
                     {
-                        title: "Arousal", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "CEC-A", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
                     },
                     {
@@ -260,11 +260,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Lexical Overlap",
                 columns: [
                     {
-                        title: "BLEU-4", field: "BLEU-4", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
+                        title: "LO-B", field: "BLEU-4", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
                         formatterParams: { decimals: 3, endColor: { r: 225, g: 213, b: 232 } }
                     },
                     {
-                        title: "ROUGE-L", field: "ROUGE-L", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
+                        title: "LO-R", field: "ROUGE-L", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
                         formatterParams: { decimals: 3, endColor: { r: 225, g: 213, b: 232 } }
                     },
                 ],
@@ -274,11 +274,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Semantic Similarity",
                 columns: [
                     {
-                        title: "BertScore-F1", field: "BertScore-F1", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "SS-B", field: "BertScore-F1", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 4, endColor: { r: 222, g: 233, b: 252 } }
                     },
                     {
-                        title: "Sentence-BERT", field: "Sentence-BERT", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "SS-S", field: "Sentence-BERT", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 4, endColor: { r: 222, g: 233, b: 252 } }
                     },
                 ],
@@ -288,11 +288,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Emotion-Intention Consistency",
                 columns: [
                     {
-                        title: "Valence", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "CEC-V", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
                     },
                     {
-                        title: "Arousal", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "CEC-A", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
                     },
                     {
@@ -320,11 +320,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Lexical Overlap",
                 columns: [
                     {
-                        title: "BLEU-4", field: "BLEU-4", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
+                        title: "LO-B", field: "BLEU-4", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
                         formatterParams: { decimals: 3, endColor: { r: 225, g: 213, b: 232 } }
                     },
                     {
-                        title: "ROUGE-L", field: "ROUGE-L", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
+                        title: "LO-R", field: "ROUGE-L", hozAlign: "center", formatter: colorFormatter, minWidth: 90, responsive: 2, headerHozAlign: "center",
                         formatterParams: { decimals: 3, endColor: { r: 225, g: 213, b: 232 } }
                     },
                 ],
@@ -334,11 +334,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Semantic Similarity",
                 columns: [
                     {
-                        title: "BertScore-F1", field: "BertScore-F1", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "SS-B", field: "BertScore-F1", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 4, endColor: { r: 222, g: 233, b: 252 } }
                     },
                     {
-                        title: "Sentence-BERT", field: "Sentence-BERT", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "SS-S", field: "Sentence-BERT", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 4, endColor: { r: 222, g: 233, b: 252 } }
                     },
                 ],
@@ -348,11 +348,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Emotion-Intention Consistency",
                 columns: [
                     {
-                        title: "Valence", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "CEC-V", field: "Valence", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
                     },
                     {
-                        title: "Arousal", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
+                        title: "CEC-A", field: "Arousal", hozAlign: "center", formatter: colorFormatter, minWidth: 90, headerHozAlign: "center",
                         formatterParams: { decimals: 5, endColor: { r: 252, g: 242, b: 204 } }
                     },
                     {
